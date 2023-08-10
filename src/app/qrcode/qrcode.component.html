@@ -1,0 +1,15 @@
+<br><br>
+<div class="container">
+  <h1>QR Code Generator</h1>
+
+  <div>
+    <label for="dataString">Data to encode:</label><br>
+    <input type="text" id="dataString" [(ngModel)]="dataString"  (keyup)="generateQRCode()" placeholder="paste URL or text">
+  </div>
+  
+  <div>
+    <canvas #qrCodeCanvas></canvas>
+  </div>
+  
+</div>
+
